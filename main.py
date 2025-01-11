@@ -85,7 +85,21 @@ if predict_button:
 
     result = encoders['class'].inverse_transform([pred])[0]
 
-    if result == 'edible':
-        st.success("✅ The mushroom is Edible!")
-    else:
-        st.error("❌ The mushroom is Poisonous!")
+    if result == "edible":
+        st.markdown(
+            f"""
+            <div style='background-color: #dff0cf; padding: 20px; border-radius: 10px;'>
+                <h4 style='text-align: center; color: #155724;'>✅ The mushroom is Edible!</h4>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    elif result == "poisonous":
+        st.markdown(
+            f"""
+            <div style='background-color: #f6e3cc; padding: 20px; border-radius: 10px;'>
+                <h4 style='text-align: center; color: #721c24;'>❌ The mushroom is Poisonous!</h4>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
