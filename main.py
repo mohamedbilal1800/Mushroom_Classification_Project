@@ -5,9 +5,6 @@ import streamlit as st
 
 st.set_page_config(page_title="Mushroom Classifier", page_icon="🍄", layout="wide")
 
-with open( "style.css" ) as css:
-    st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
-
 with open("Mushroom_model_data.pkl", "rb") as obj1:
     dict1 = pickle.load(obj1)
 
