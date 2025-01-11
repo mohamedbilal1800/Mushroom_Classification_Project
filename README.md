@@ -2,6 +2,8 @@
 
 This repository contains the **Mushroom Classification Project**, a machine learning-based web application that classifies mushrooms as **edible** or **poisonous** based on various features. The project includes a **Jupyter Notebook** for data analysis and model development, as well as a **Streamlit web app** for user interaction.
 
+Live Demo : [https://mushroom-classification-project-01.streamlit.app/]
+
 ---
 
 ## 📋 **Project Overview**
