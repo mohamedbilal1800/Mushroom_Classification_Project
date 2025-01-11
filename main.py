@@ -5,7 +5,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Mushroom Classifier", page_icon="🍄", layout="wide")
 
-with open("Mushroom_model_data.pkl", "rb") as obj1:
+with open("mushroom_model_data.pkl", "rb") as obj1:
     dict1 = pickle.load(obj1)
 
 model = dict1['model']
